@@ -21,7 +21,7 @@ void loop() {
   Serial.println(buttonState);
   // check if the pushbutton is pressed.
   // if it is, the buttonState is HIGH
-  if (buttonState == HIGH) {
+  if (!buttonState == HIGH) {
     // turn LED on
     digitalWrite(ledPin, HIGH);
   } else {
